@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <style>
+        .menu {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            background-color: #333;
+            font-size: 30px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline-block;
+            font-size: 20px;
+            padding: 20px;
+        
+        }
+
+        .menu a {
+            color: whitesmoke;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            max-width: 140px;
+            font-weight: bold;
+            letter-spacing: .15em;
+        }
+
+        h1{
+            border-top: 3px solid #b0100a;
+            color:#b0100a;;
+        }
+
+        .button:hover{
+            background-color:#b0100a;
+        }
+
+        .container {
+            /*border: solid 2px green;*/
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif
+        }
+
+        .containerFooter{
+            border: 1px solid; 
+            background-color: #333;
+            font-size: 0.8em;
+            color: whitesmoke;
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        iframe{
+            padding: 25px 12.6%;
+            width:672px; height:378px;
+            border: none;
+        }
+
+        .kruh {
+            text-align: center;
+            width: 900px;
+            margin: 0px;
+            bottom: 0px;
+            height: 260px;
+        }
+        .snehuliak{
+            text-align: center;
+        }
+
+        .text{
+            margin-bottom: 0px;
+            text-align: justify;
+        }
+
+        .info{
+            display: flex;
+           /* border: solid 1px green;         */
+            justify-content: space-around;
+            margin-top: 5px;
+        }
+
+        .p-info{
+            margin: 0px;
+        }
+        
+    </style>
+
+</head>
+<body>
+<nav>
+    <ul class="menu">
+        <li class="button"><a href="index.html" >Domov</a></li>
+        <li class="button"><a href="rebricek_najlepsich_filmov.html">Rebríček najlepších filmov</a></li>
+        <li class="button"><a href="add-review.html">Pridať recenziu</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1>Sedem</h1>
+    <h2>O filme</h2>
+
+    <p class="text"><mark>Dvaja policajti</mark> (<i>Brad Pitt a Morgan Freeman</i>) sú na stope geniálneho vraha, zodpovednéhoza sériu desivých vrážd, ktorých obete spája sedem smrteľných hriechov. V jednej z rolí tohto kvalitného <strong>trhilleru</strong>, zasadeného do temného mesta nasiaknutého bolesťou a skazou, uvidíte aj Gwyneth Paltrow. David Fincher (Klub bitkárov, Zodiac, Podivuhodný prípad Benjamina Buttona) s dokonalou znalosťou našich najhlbších obáv pevne zviera opraty akcie fyzické, psychické i spirituálne – neodvratne smerujúce k rozuzleniu, ktoré do hĺbky otrasie aj tou najzatvrdnutejšou dušou.</p>
+
+    <div class="info">
+        <p class="p-info"><i class="fa-solid fa-clapperboard" title="Réžia"> David Fincher</i></p>
+        <p class="p-info"><i class="fa-solid fa-pencil" title="Scenár"> Andrew Kevin Walker</i></p>
+        <p class="p-info"><i class="fa-solid fa-video" title="Kamera"> Darius Khondji</i></p>
+        <p class="p-info"><i class="fa-solid fa-music" title="Hudba"> Howard Shore</i></p>
+    </div>
+
+    <h2>Herci</h2>
+    <p style="color:blue;font-weight:bold">Brad Pitt</p>
+    <p style="color:rgb(0, 255, 81);font-weight:bold">Morgan Freeman</p>
+    <p style="color:rgb(255, 85, 0);font-weight:bold">Gwyneth Paltrow</p>
+    <p style="color:DodgerBlue;font-weight:bold">Kevin Spacey</p>
+    
+    <iframe src="https://www.youtube.com/embed/znmZoVkCjpI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <br><br>
+    
+    <div class="kruh">
+        <svg height="400" width="400">
+        <circle cx="120" cy="120" r="30%" fill="gold" />
+        <text x="50" y="120" fill="black">SVG kruh s textom</text>
+        </svg>
+    </div>
+
+    <div class="snehuliak">
+        <svg height="300" width="300">
+            <circle class="head" cx="150" cy="70" r="60" stroke="black" stroke-width="1" fill="white" />
+            <circle class="right eye" cx="130" cy="50" r="10" fill="black" />
+            <circle class="left eye" cx="170" cy="50" r="10" fill="black" />
+            <circle class="mouth" cx="150" cy="80" r="10" fill="black" />
+            <circle class="torso" cx="150" cy="210" r="80" stroke="black" stroke-width="1" fill="white"/>
+            <circle class="button" cx="150" cy="170" r="10" fill="black" />
+            <circle class="button" cx="150" cy="210" r="10" fill="black" />
+            <circle class="button" cx="150" cy="250" r="10" fill="black" />
+        </svg>
+    </div>
+</div>
+<footer class="containerFooter">
+    <div>
+        <p>IT v kurze © 2022</p>
+    </div>
+</footer>
+
+</body>
+</html>

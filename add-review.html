@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .menu {
+      background-color: #333;
+      font-size: 30px;
+      list-style-type: none;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container{
+      /*border: solid 2px green;*/
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto;
+      font: .9em/1.2 Arial, Helvetica, sans-serif
+    }
+
+    .menu {
+      background-color: #333;
+      font-size: 30px;
+      list-style-type: none;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      display: inline-block;
+      font-size: 20px;
+      padding: 20px;
+    }
+
+    .menu li a {
+      color: whitesmoke;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      max-width: 140px;
+      font-weight: bold;
+      letter-spacing: .15em;
+    }
+
+    #review {
+      background-color: #b0100a;
+    }
+    
+    #review2 {
+      color: #b0100a;
+      padding-right: 0px;
+      margin-left: 0px;
+    width: 20px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    }
+
+    h1{
+      text-align: center;
+    }
+
+
+    form {
+      background-color: #fff;
+      border: 1px solid rgba(2, 0, 0, 0.5);
+      width: 800px;
+      margin: auto;
+      padding-top: 15px;
+      letter-spacing: .05em;
+    }
+
+    body{
+      margin: 0px;
+    }
+
+    input,
+    button,
+    textarea {
+      display: block;
+      margin: 3px;
+      width: 327px;
+      padding: 15px 20px;
+      margin: 15px;
+      border-radius: 4px;
+    }
+
+    textarea {
+      width: 727px; height: 182px;
+      border: 1px solid #ccc
+    }
+
+    button {
+      text-decoration: none;
+      padding: 20px 50px;
+      border: 2px solid; 
+      color: #b0100a;
+      border-radius: 10px;
+      width: 200px;
+      padding: 15px 20px;
+    }
+
+    button:hover {
+      animation: pulsate 1s;
+    }
+
+    @keyframes pulsate{
+      0%{
+        box-shadow: 0 0 25px #5ddcff;
+        box-shadow: 0 0 25px #b0100a;
+      }
+    }
+
+    label{
+      padding: 15px;
+    }
+
+    input{
+      border: 1px solid #ccc
+    }
+
+    .form_Item {
+      display: flex;
+      margin-top: 0px;
+      align-items: baseline;
+      justify-content: center;
+  align-items: center;
+    }
+  
+    .review {
+      padding-right: 0px; 
+      padding-left: 0px; 
+      margin-left: 30px;
+      margin-right: 40px; 
+      margin-top: 0px; 
+      margin-bottom: 0px;
+    }
+
+    .style{
+      display: flex;
+      flex-direction: row;
+      width: 400px;
+      justify-content: center;
+  align-items: center;
+    }
+
+    .style2{
+      display: flex;
+      flex-direction: row;
+      width: 400px;
+     
+    }
+
+    input,
+    textarea{
+      margin-top: 3px;
+    }
+
+    body{
+      background-color: whitesmoke;
+    }
+
+    .container2 {
+      position: relative;
+      height: 200px;
+    }
+
+    .zelena{
+      position: relative;
+      z-index: 1;
+      border: 18px solid green;
+      height: 100px;
+      width: 100px;
+      margin: 30px;
+      top: -25px;
+      left: 60px;
+    }
+
+    .zlta{
+      position: absolute;
+      z-index: 2;
+      border: 18px solid gold;
+      height: 100px;
+      width: 100px;
+      margin: 30px;
+      top: -11px;
+      left: 20px;
+    }
+    
+    .modra{
+      position: absolute;
+      z-index: 3;
+      border: 18px solid blue;
+      height: 100px;
+      width: 100px;
+      margin: 30px;
+      top: -11px;
+      left: 60px;
+    }
+    
+    .cervena{
+      position: absolute;
+      z-index: 4;
+      border: 18px solid red;
+      height: 100px;
+      width: 100px;
+      margin: 30px;
+      top: -55px;
+      left: 20px;
+    }
+
+    .containerFooter{
+      border: 1px solid; 
+      background-color: #333;
+      font-size: 0.8em;
+      color: whitesmoke;
+      list-style-type: none;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="index.html">Domov</a></li>
+    <li><a href="rebricek_najlepsich_filmov.html">Rebríček najlepších filmov</a></li>
+    <li id="review"><a href="add-review.html">Pridať recenziu</a></li>
+  </ul>
+
+  <div class="container">
+    <h1>Pridaj recenziu</h1>
+
+    <form action="/action_page.php" 
+    oninput="x.value=parseInt(review.value)">
+      <div class="form_Item">
+        <div>
+          <label for="Fname">Názov filmu:</label><br>
+          <input type="text" name="Fname" id="Fname" placeholder="Zadajte názov filmu" required>
+          <span class="help-block"></span>
+        </div>
+            
+        <div>
+          <label for="name">Meno:</label><br>
+          <input type="text" name="name" id="name" placeholder="Zadajte vaše meno">
+          <span class="help-block"></span>
+        </div>
+      </div>
+
+      <div class="form_Item">
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Zadajte váš email" required>
+        </div>
+
+        <div>
+          <label for="date">Kedy ste film pozerali?</label>
+          <input type="date" id="date" name="date">
+        </div>
+      </div>
+
+      <div class="form_Item">
+        <div class="style">
+          <label for="review2">Hodnotenie</label>
+          <input type="range" id="review2" name="review2" class="review2" min="0" max="100" step="10" value="50" style="margin-left: 0px;width: 210px;margin-right: 10px;">
+          <div><p><output name="x" for="review2"></output></p></div><p>%</p>
+        </div>
+        
+        <div class="style2">
+          <p><label for="genre" style="padding-left: 65px;padding-right: 5px;">Žáner filmu: </label>
+          <select name="genre" id="genre">
+            <option value="volvo">Akčný</option>
+          <option value="saab">Dráma</option>
+            <option value="opel">Komédia</option>
+            <option value="audi">Sci-Fi</option>
+            <option value="audi">Thriller</option>
+            <option value="audi">Animovaný</option>
+            <option value="audi">Romantický</option>
+          </select>
+          <br><br>
+        </div>
+      </div>
+
+      <div>
+        <label for="message">Správa</label>
+        <textarea name="message" class="form-control" rows="6" id="message" placeholder="Zadajte vašu správu" ></textarea>
+      </div>
+
+      <div>
+        <button type="submit">
+        Poslať správu
+        </button>
+      </div>
+
+    </form>
+
+    <br><br><br>
+
+    <div class="container2">
+      <div class="zelena"></div>
+      <div class="zlta"></div>
+      <div class="modra"></div>
+      <div class="cervena"></div>
+    </div>
+
+  </div>
+
+  <footer class="containerFooter">
+    <div>
+        <p>IT v kurze © 2022</p>
+    </div>
+</footer>
+
+</body>
+</html>

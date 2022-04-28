@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .container {
+            /*border: solid 2px green;*/
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif
+        }
+
+        .menu {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            background-color: #333;
+            font-size: 30px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline-block;
+            font-size: 20px;
+            padding: 20px;
+        
+        }
+
+        .menu li a {
+            color: whitesmoke;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            max-width: 140px;
+            font-weight: bold;
+            letter-spacing: .15em;
+        }
+
+        #domov {
+            background-color: #b0100a;
+        }
+
+        #banner {
+            position: relative;
+            width: 900px;
+            height: 506px;
+            text-align: center;
+            background-image: url("banner900.jpg");
+            background-repeat: no-repeat;
+            background-color: #333;
+          }
+
+        .banText{
+            position: absolute;
+            color: white;
+            top: 170px;
+            left: 15px;;
+            width: 355px;
+            height: 325px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .text2{
+            font-size: 2.1rem;
+            color: whitesmoke;
+            font-weight: bold;
+            margin: 0px;
+            text-transform: uppercase;
+
+        }
+
+        .text3{
+            font-size: .8rem;
+            color: #b0100a;
+            font-weight: bold;
+            margin: 0px;
+
+        }
+
+        .text-ban{
+            margin: 0px;
+            text-align: justify;
+            margin-top: 5px;
+        }
+       
+        .glyphicon{
+            color: #b0100a;
+            font-size: 4em;
+        }
+
+        .icon{
+            height: 40px;
+            margin-top: 0px;
+        }
+
+        body{
+            background-color: whitesmoke;
+        }
+
+        button {
+            text-decoration: none;
+            padding: 20px 50px;
+            border: 1px solid; 
+            color: whitesmoke;
+            background:#b0100a;
+            border-radius: 10px;
+            width: 80px;
+            padding: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            animation: pulsate 2s; 
+            color: #b0100a;
+            background-color: whitesmoke;
+        }
+
+        @keyframes pulsate{
+            0%{
+                box-shadow: 0 0 25px whitesmoke;
+                box-shadow: 0 0 25px #b0100a;
+            }
+        }
+
+        .containerFooter{
+            border: 1px solid; 
+            background-color: #333;
+            font-size: 0.8em;
+            color: whitesmoke;
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .oblubeneFilmy {
+            text-align: center;
+        }
+
+        iframe{
+            padding: 25px 12.6%;
+            width:672px; height:378px;
+            border: none;
+            padding-top: 15px;
+        }
+        
+        p.intro::first-letter{
+            color: #b0100a;
+            font-size: 150%;
+            font-weight: bold;
+        }
+
+        .info{
+            display: flex;
+           /* border: solid 1px green;         */
+            justify-content: space-around;
+            margin-top: 5px;
+        }
+
+       .p-info{
+            margin: 0px;
+        }
+
+        h2{
+            color: #b0100a;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <div>
+        <nav>
+            <ul class="menu">
+                <li id="domov"><a href="index.html">Domov</a></li>
+                <li><a href="rebricek_najlepsich_filmov.html">Rebríček najlepších filmov</a></li>
+                <li><a href="add-review.html">Pridať recenziu</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+<div class="container">
+        <div id="banner">
+            
+            <div class="banText">
+                <p class="icon"><span class="glyphicon">&#x2b;</span></p> 
+                <p class="text2">Hacksaw</p>
+                <p class="text3">FILM PODĽA SKUTOČNEJ UDALOSTI</p>
+                <p class="text2">Ridge</p>
+                <p class="text-ban">Na Okinawe počas najkrvavejšej bitky druhej svetovej vojny zachránil Desmond Doss (Andrew Garfield) 75 mužov bez toho, aby strieľal alebo niesol zbraň. Bol jediným americkým vojakom v druhej svetovej vojne, ktorý bojoval v prvej línii bez zbrane, pretože veril, že aj keď bola vojna oprávnená, zabíjanie bolo nesprávne.</p>
+                
+                <div>
+                    <form action="#1">
+                        <button type="submit" >
+                            viac info
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+            
+    <section class="oblubeneFilmy">
+      <h1>Filmy, čo mám rád</h1>
+      
+      <p><a href="movie1.html">Sedem</a></p>
+      <p><a href="movie2.html">Zelená míľa</a></p>
+      <p><a href="https://www.csfd.sk/film/411301-hacksaw-ridge-zrodenie-hrdinu/prehlad/" target="_blank">Hacksaw Ridge: Zrodenie hrdinu</a></p>
+    </section>
+
+    <br>
+
+        <article>
+            <header>
+                <h2>Sedem</h2>
+            </header>
+                <p class="textp">
+                Detektív poručík William Somerset (Morgan Freeman) pomaly končí svoju kariéru a jeho poslednou úlohou je zaučiť mladého a ambiciózneho detektíva Davida Millsa (Brad Pitt). Obaja sú nasadení na vyšetrovanie prípadu brutálnej vraždy, ktorý ich neodvolateľne vtiahne do pomýleného a zvráteného sveta psychicky narušeného, ale inteligentného a rafinovaného zločinca, s krycím menom Johna Doe. Vražedný maniak v besnom zabíjaní pokračuje - už na druhý deň sa nájde zohavené telo najlepšieho advokáta v meste, vedľa ktorého je krvou napísané slovo „chamtivosť“. Zdá sa, že to nie je posledná obeť a kým polícia vraha vypátra, bude každý zo siedmich smrteľných hriechov - obžerstvo, chamtivosť, lenivosť, smilstvo, pýcha, závisť a hnev - kruto potrestaný...
+                </p>
+                <div class="info">
+                    <p class="p-info"><i class="fa-solid fa-clapperboard" title="Réžia"> David Fincher</i></p>
+                    <p class="p-info"><i class="fa-solid fa-pencil" title="Scenár"> Andrew Kevin Walker</i></p>
+                    <p class="p-info"><i class="fa-solid fa-video" title="Kamera"> Darius Khondji</i></p>
+                    <p class="p-info"><i class="fa-solid fa-music" title="Hudba"> Howard Shore</i></p>
+                </div>
+                <iframe src="https://www.youtube.com/embed/SpKbZ_3zlb0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+
+        <article>
+            <header>
+                <h2>Zelená míľa</h2>
+            </header>
+                <p class="textp">
+                V roku 1935 pracoval Paul Edgecomb ako vrchný dozorca v celách smrti jednej lousianskej väznici, kam priviedli nového odsúdenca, obrovského černocha Johna Coffeyho. Aj keď pôsobil mierumilovným dojmom, bol odsúdený za vraždu dvoch malých dievčat. Omnoho viac starostí ako väzni odsúdení na smrť, spôsobuje v tom čase Paulovi ťažký zápal močového mechúra. Jediná priaznivá správa je, že sadistický, všetkými nenávidený dozorca Percy plánuje podať žiadosť o preloženie, ale iba vtedy, keď bude môcť viesť nasledujúcu popravu. V tom čase je privezený ďalší väzeň, nebezpečný Bill Wharton, ktorý hneď po svojom príchode napadne strážnika. Jedného dňa chce s bolesťou zmietaným Paulom hovoriť Coffey. Keď sa dozorca priblíži, chytí ho rukou v rozkroku. Po tom, ako šokovaného Paula pustí, černoch vydýchne z úst čierny oblak. Súčasne si uvedomí, že jeho bolestivý zápal zmizol. Ďalší zázrak predvedie neskôr, keď Percy s potešením zabije ochočenú myš, ktorú choval jeden z trestancov. Svojou nadprirodzenou mocou ju pred prekvapenými strážami oživí. Pri poprave Percy zámerne nenamočí hubku, ktorá sa prikladá na odsúdencovu hlavu. Popravovaný muž sa namiesto rýchlej smrti uškvarí v strašných bolestiach. Paul ho donúti napísať žiadosť o preloženie. Keď je potom svedkom bolesti svojho priateľa, riaditeľa väznice, starajúceho sa o umierajúcu manželku s neliečiteľným mozgovým nádorom, presvedčí kolegov, aby mu pomohli dostať k trpiacej žene Johna Coffeyho, ktorý by jej možno dokázal pomôcť. Černoch ženu skutočne uzdraví. Ale vo väznici nečakane napadne Percyho a vdýchne do neho čierny oblak. Omámený dozorca vzápätí zastrelí Billa Whartona, ktorý sa ho pokúsil napadnúť. John rozpovie Paulovi pravdu. Vrahom dvoch malých dievčatiek nebol on. Zúfalý Paul to už dávno tušil. Hľadá spôsob, ako zabrániť poprave nevinného...
+                </p>
+                <div class="info">
+                    <p class="p-info"><i class="fa-solid fa-clapperboard" title="Réžia"> Frank Darabont</i></p>
+                    <p class="p-info"><i class="fa-solid fa-pencil" title="Scenár"> Frank Darabont</i></p>
+                    <p class="p-info"><i class="fa-solid fa-video" title="Kamera"> David Tattersall</i></p>
+                    <p class="p-info"><i class="fa-solid fa-music" title="Hudba"> Thomas Newman</i></p>
+                </div>
+                <iframe src="https://www.youtube.com/embed/Ki4haFrqSrw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+
+        <article>
+            <header>
+                <h2 id="1">Hacksaw Ridge: Zrodenie hrdinu</h2>
+            </header>
+            <p class="textp">
+            Krátko potom, čo Japonci 7. decembra 1941 zaútočili na Pearl Harbor, prihlásil sa dvadsaťtriročný Američan Desmond Doss, tak ako mnoho iných mladíkov, do služby vlasti. Z hĺbky svojho presvedčenia však odmietal nosiť akúkoľvek zbraň a zabíjať. Stal sa zdravotníkom 307. pešieho pluku 77. pešej divízie. Skutočnosť, že Doss odmietal zbraň, sa nestretávala s pochopením u jeho spolubojovníkov. Len blázon by chvel, aby mu v boji kryl chrbát chlapík, vyzbrojený len odhodlaním a lekárničkou. Často musel čeliť nevraživosti a útokom ostatných vojakov. Napriek tomu, ako jediný americký vojak 2. svetovej vojne, bojoval v prvých líniách neozbrojený.
+            V marci 1945 vypukla krvavá bitka o Okinawu. Dossova rota mala za úlohu dobyť 120 metrový vysoký útes. Keď sa vojaci vyšplhali s pomocou lán na vrchol, dostali sa do ťažkej delostreleckej, mínometnej a guľometnej paľby. Vojak Doss sa odmietol ukryť a zostal uprostred krvavého pekla. Znášal jedného zraneného po druhom z útesu do bezpečia. Počas vyčerpávajúcich 12 hodín, za stáleho ostreľovania, zachránil životy 75 vojakom...
+            </p>
+            <div class="info">
+                <p class="p-info"><i class="fa-solid fa-clapperboard" title="Réžia"> Mel Gibson</i></p>
+                <p class="p-info"><i class="fa-solid fa-pencil" title="Scenár"> Robert Schenkkan</i></p>
+                <p class="p-info"><i class="fa-solid fa-video" title="Kamera"> Simon Duggan</i></p>
+                <p class="p-info"><i class="fa-solid fa-music" title="Hudba"> Rupert Gregson-Williams</i></p>
+            </div>
+            <iframe src="https://www.youtube.com/embed/01Hgmigvhpw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    
+    </div>
+
+    <footer class="containerFooter">
+        <div>
+            <p>IT v kurze © 2022</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
